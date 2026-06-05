@@ -5,6 +5,9 @@ import { Navbar } from "@/components/layout/Navbar";
 export const metadata: Metadata = {
   title: "MockupForge | Free Logo Mockup Generator",
   description: "Turn any logo into premium real-world mockups in seconds.",
+  other: {
+    "google-adsense-account": "ca-pub-6393936268623951",
+  },
 };
 
 export default function RootLayout({
