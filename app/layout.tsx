@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { RecentlyLaunched } from "@/components/shared/RecentlyLaunched";
 
 export const metadata: Metadata = {
   title: "MockupForge — Free Logo Mockup Generator | alfo.online",
@@ -80,6 +81,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="antialiased min-h-screen flex flex-col">
+        <RecentlyLaunched />
         <Navbar />
         <main className="flex-1">
           {children}
