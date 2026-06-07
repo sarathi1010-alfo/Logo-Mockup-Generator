@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as fabric from "fabric";
 import { MockupConfig } from "@/lib/mockups";
 import { Download, Upload } from "lucide-react";

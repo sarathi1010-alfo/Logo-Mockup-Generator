@@ -1,6 +1,7 @@
 import { mockups } from "@/lib/mockups";
 import Link from "next/link";
 import { ArrowRight, Image as ImageIcon } from "lucide-react";
+import { RelatedTools } from "@/components/shared/RelatedTools";
 
 export default function Home() {
   return (
@@ -64,6 +65,7 @@ export default function Home() {
         </div>
       </div>
 
+      <RelatedTools currentCategory="design" />
     </div>
   );
 }
