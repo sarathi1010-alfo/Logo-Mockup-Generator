@@ -1,6 +1,16 @@
 import { mockups } from "@/lib/mockups";
 import Link from "next/link";
 import { ArrowRight, Image as ImageIcon } from "lucide-react";
+import { RelatedTools } from "@/components/shared/RelatedTools";
+import { PopularTools } from "@/components/shared/PopularTools";
+import { NewsletterCapture } from "@/components/shared/NewsletterCapture";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -64,6 +74,16 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <div className="lg:col-span-2">
+            <RelatedTools currentCategory="design" />
+        </div>
+        <div className="lg:col-span-1 mt-16 pt-12 lg:mt-0 lg:pt-0 border-t lg:border-t-0 border-slate-200">
+            <PopularTools />
+        </div>
+      </div>
+
+      <NewsletterCapture />
     </div>
   );
 }
