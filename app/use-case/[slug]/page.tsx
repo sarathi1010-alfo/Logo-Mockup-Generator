@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     description: data.description,
     keywords: data.keyword,
     alternates: {
-        canonical: `https://mockupforge.alfo.online/use-case/${data.slug}`
+        canonical: `/use-case/${data.slug}`
     }
   };
 }

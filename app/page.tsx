@@ -4,6 +4,13 @@ import { ArrowRight, Image as ImageIcon } from "lucide-react";
 import { RelatedTools } from "@/components/shared/RelatedTools";
 import { PopularTools } from "@/components/shared/PopularTools";
 import { NewsletterCapture } from "@/components/shared/NewsletterCapture";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

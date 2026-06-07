@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | MockupForge",
+  alternates: {
+    canonical: "/terms-of-service",
+  },
+};
+
 export default function TermsOfService() {
   const lastUpdated = new Date().toLocaleDateString("en-US", {
     month: "long",

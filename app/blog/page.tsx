@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog | MockupForge",
   description: "Read our latest articles and tutorials on design presentation, mockups, and branding.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogIndex() {

@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | MockupForge",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
+
 export default function PrivacyPolicy() {
   const lastUpdated = new Date().toLocaleDateString("en-US", {
     month: "long",

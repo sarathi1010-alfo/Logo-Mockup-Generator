@@ -5,21 +5,21 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { RecentlyLaunched } from "@/components/shared/RecentlyLaunched";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://mockupforge.alfo.online";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "MockupForge — Free Logo Mockup Generator | alfo.online",
   description: "Turn any logo into premium real-world mockups in seconds. Free online logo mockup generator for presentations, branding, and portfolios.",
   keywords: "free logo mockup, online mockup generator, realistic logo mockup, 3d logo mockup, branding mockup",
-  alternates: {
-    canonical: "https://mockupforge.alfo.online",
-  },
   openGraph: {
     title: "MockupForge — Free Logo Mockup Generator",
     description: "Turn any logo into premium real-world mockups in seconds. No software required.",
-    url: "https://mockupforge.alfo.online",
+    url: "/",
     siteName: "MockupForge",
     images: [
       {
-        url: "https://mockupforge.alfo.online/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MockupForge — Free Logo Mockup Generator",
     description: "Turn any logo into premium real-world mockups in seconds. No software required.",
-    images: ["https://mockupforge.alfo.online/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
   other: {
     "google-adsense-account": "ca-pub-6393936268623951",
@@ -42,7 +42,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "MockupForge",
-  "url": "https://mockupforge.alfo.online",
+  "url": SITE_URL,
   "description": "Turn any logo into premium real-world mockups in seconds. Free online logo mockup generator.",
   "applicationCategory": "DesignApplication",
   "operatingSystem": "All",

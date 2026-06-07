@@ -3,7 +3,7 @@ import { mockups } from '@/lib/mockups';
 import { seoData } from '@/lib/seo-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mockupforge.alfo.online';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online';
 
   const mockupUrls = mockups.map((mockup) => ({
     url: `${baseUrl}/mockup/${mockup.slug}`,
