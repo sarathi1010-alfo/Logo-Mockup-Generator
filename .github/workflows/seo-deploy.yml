@@ -1,0 +1,43 @@
+name: SEO Deploy Checks
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://www.mockupforge.com
+
+      - name: Verify SEO Tags
+        run: |
+          # Basic check to ensure no accidentally added global noindex
+          if grep -q "noindex" app/layout.tsx; then echo "Failed: noindex found in global layout"; exit 1; fi
+          # Basic check for Schema
+          if ! grep -q "application/ld+json" app/tools/color/rgb-to-hsl/layout.tsx; then echo "Failed: Schema missing from tool layout"; exit 1; fi
+
+      - name: Run Google Search Console Submission
+        run: node scripts/submit-sitemap.mjs
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+          NEXT_PUBLIC_SITE_URL: https://www.mockupforge.com
