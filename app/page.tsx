@@ -41,12 +41,18 @@ export default function Home() {
                 <img
                   src={mockup.layers.background}
                   alt={mockup.title}
+                  width={500}
+                  height={500}
+                  loading="eager"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {mockup.layers.overlay && (
                    <img
                     src={mockup.layers.overlay}
                     alt=""
+                    width={500}
+                    height={500}
+                    loading="eager"
                     className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-50"
                   />
                 )}
