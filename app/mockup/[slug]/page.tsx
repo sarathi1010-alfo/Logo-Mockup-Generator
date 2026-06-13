@@ -2,6 +2,10 @@ import { getMockupBySlug, mockups } from "@/lib/mockups";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import ClientEditorWrapper from "@/components/editor/ClientEditorWrapper";
+import { resolveMetadata } from "@/lib/seo/resolveMetadata";
+import { buildMockupMeta } from "@/lib/seo/metaFactories";
+import { JsonLd } from "@/components/JsonLd";
+import { buildProductSchema, buildBreadcrumbSchema } from "@/lib/seo/buildSchema";
 
 export async function generateStaticParams() {
   return mockups.map((mockup) => ({
@@ -17,10 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: "Not Found" };
   }
 
-  return {
-    title: `${mockup.seo.title} | MockupForge`,
-    description: mockup.seo.description,
-  };
+  return resolveMetadata(buildMockupMeta(mockup));
 }
 
 export default async function MockupPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -32,7 +33,10 @@ export default async function MockupPage({ params }: { params: Promise<{ slug: s
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <JsonLd schema={buildProductSchema(buildMockupMeta(mockup))} />
+      <JsonLd schema={buildBreadcrumbSchema(buildMockupMeta(mockup).breadcrumbs || [])} />
+      <h1 className="sr-only">{mockup.seo.title || mockup.title}</h1>
       <div className="mb-8">
         <ClientEditorWrapper config={mockup} />
       </div>
@@ -52,6 +56,6 @@ export default async function MockupPage({ params }: { params: Promise<{ slug: s
           ))}
         </div>
       </div>
-    </div>
+    </article>
   );
 }

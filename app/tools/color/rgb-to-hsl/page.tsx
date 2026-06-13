@@ -41,7 +41,8 @@ export default function RgbToHslPage() {
       title="RGB to HSL Color Converter"
       description="Convert RGB color values to HSL format easily and quickly."
     >
-      <div className="space-y-6">
+      <article className="space-y-6">
+        <h1 className="sr-only">RGB to HSL Color Converter</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* R */}
           <div>
@@ -114,13 +115,13 @@ export default function RgbToHslPage() {
 
         {/* SEO How it works section */}
         <div className="mt-12 prose prose-indigo max-w-none">
-          <h3>How it works</h3>
+          <h2>How it works</h2>
           <p>
             This tool mathematically converts the Red, Green, and Blue (RGB) color space values into Hue, Saturation, and Lightness (HSL).
             This is extremely useful for developers and designers who need to translate colors from image editors (which often use RGB) to web formats like CSS where HSL provides more intuitive control over color manipulation.
           </p>
 
-          <h3>Frequently Asked Questions</h3>
+          <h2>Frequently Asked Questions</h2>
           <dl className="space-y-6 mt-6">
             <div>
               <dt className="text-base font-medium text-gray-900">What is RGB?</dt>
@@ -136,7 +137,7 @@ export default function RgbToHslPage() {
             </div>
           </dl>
         </div>
-      </div>
+      </article>
     </Converter>
   )
 }
