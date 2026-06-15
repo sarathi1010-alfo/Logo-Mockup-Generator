@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const schema = toolData ? generateSoftwareSchema({
     name: toolData.name,
     description: `Easily ${toolData.primaryAction} ${toolData.inputType} to ${toolData.outputType} online. ${toolData.keyBenefit}.`,
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/tools/color/rgb-to-hsl`
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.mockupforge.com'}/tools/color/rgb-to-hsl`
   }) : null
 
   return (
