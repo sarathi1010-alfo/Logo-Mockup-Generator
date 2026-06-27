@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as fabric from "fabric";
 import { MockupConfig } from "@/lib/mockups";
-import { Download, Upload } from "lucide-react";
+import { Download, Upload, Maximize } from "lucide-react";
 
 interface MockupEditorProps {
   config: MockupConfig;
@@ -14,6 +14,9 @@ export default function MockupEditor({ config }: MockupEditorProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [canvas, setCanvas] = useState<fabric.Canvas | null>(null);
   const [logoImage, setLogoImage] = useState<fabric.FabricImage | null>(null);
+
+  const [, setGuideLines] = useState<fabric.Line[]>([]);
+  const [activeVariation, setActiveVariation] = useState<string>("default");
 
   // Initialize Canvas
   useEffect(() => {
@@ -26,12 +29,81 @@ export default function MockupEditor({ config }: MockupEditorProps) {
       backgroundColor: "#ffffff",
     });
 
+    // Snapping logic
+    initCanvas.on("object:moving", (e) => {
+      const obj = e.target;
+      if (!obj) return;
+
+      const snapThreshold = 15;
+      const targetX = config.transform.left;
+      const targetY = config.transform.top;
+
+      // Clear old guides
+      const newGuides: fabric.Line[] = [];
+      initCanvas.getObjects("line").forEach(l => initCanvas.remove(l));
+
+      if (Math.abs(obj.left! - targetX) < snapThreshold) {
+        obj.set({ left: targetX });
+        const vLine = new fabric.Line([targetX, 0, targetX, 1000], {
+          stroke: "#4f46e5",
+          strokeWidth: 1,
+          selectable: false,
+          evented: false,
+          strokeDashArray: [5, 5],
+        });
+        initCanvas.add(vLine);
+        newGuides.push(vLine);
+      }
+
+      if (Math.abs(obj.top! - targetY) < snapThreshold) {
+        obj.set({ top: targetY });
+        const hLine = new fabric.Line([0, targetY, 1000, targetY], {
+          stroke: "#4f46e5",
+          strokeWidth: 1,
+          selectable: false,
+          evented: false,
+          strokeDashArray: [5, 5],
+        });
+        initCanvas.add(hLine);
+        newGuides.push(hLine);
+      }
+
+      setGuideLines(newGuides);
+    });
+
+    initCanvas.on("object:scaling", (e) => {
+      const obj = e.target;
+      if (!obj || !obj.scaleX || !obj.width) return;
+
+      const currentWidth = obj.width * obj.scaleX;
+      const targetWidth = config.transform.width;
+
+      const ratios = [0.25, 0.5, 0.75, 1];
+      const snapThreshold = 0.05; // 5% threshold
+
+      for (const ratio of ratios) {
+        const snapWidth = targetWidth * ratio;
+        if (Math.abs(currentWidth - snapWidth) / targetWidth < snapThreshold) {
+          const newScale = snapWidth / obj.width;
+          obj.set({ scaleX: newScale, scaleY: newScale });
+          break;
+        }
+      }
+    });
+
+    initCanvas.on("mouse:up", () => {
+      // Clear guides on mouse up
+      initCanvas.getObjects("line").forEach(l => initCanvas.remove(l));
+      setGuideLines([]);
+      initCanvas.requestRenderAll();
+    });
+
     setCanvas(initCanvas);
 
     return () => {
       initCanvas.dispose();
     };
-  }, []);
+  }, [config]);
 
   // Load Mockup Assets
   useEffect(() => {
@@ -42,7 +114,12 @@ export default function MockupEditor({ config }: MockupEditorProps) {
 
       // Load Background
       try {
-        const bgImg = await fabric.FabricImage.fromURL(config.layers.background);
+        // Find variation overrides
+        const variation = config.variations?.find(v => v.id === activeVariation);
+
+        const bgUrl = variation?.background || config.layers.background;
+
+        const bgImg = await fabric.FabricImage.fromURL(bgUrl);
         bgImg.set({
           originX: "left",
           originY: "top",
@@ -53,12 +130,24 @@ export default function MockupEditor({ config }: MockupEditorProps) {
         bgImg.scaleToWidth(1000);
         bgImg.scaleToHeight(1000);
 
+        // Apply variation color if provided and no explicit bg override
+        if (variation && variation.color && !variation.background) {
+           const filter = new fabric.filters.BlendColor({
+            color: variation.color,
+            mode: "multiply",
+            alpha: 0.8
+          });
+          bgImg.filters = [filter];
+          bgImg.applyFilters();
+        }
+
         canvas.add(bgImg);
         canvas.sendObjectToBack(bgImg);
 
         // Load Overlay if exists
-        if (config.layers.overlay) {
-          const overlayImg = await fabric.FabricImage.fromURL(config.layers.overlay);
+        const overlayUrl = variation?.overlay || config.layers.overlay;
+        if (overlayUrl) {
+          const overlayImg = await fabric.FabricImage.fromURL(overlayUrl);
           overlayImg.set({
             originX: "left",
             originY: "top",
@@ -76,6 +165,17 @@ export default function MockupEditor({ config }: MockupEditorProps) {
           canvas.bringObjectToFront(overlayImg);
         }
 
+        // Restore logo if we had one
+        if (logoImage) {
+          canvas.add(logoImage);
+          // Bring to proper index (between bg and overlay)
+          const objects = canvas.getObjects();
+          const overlay = objects.find(obj => obj.selectable === false && obj !== objects[0] && obj !== logoImage);
+          if (overlay) {
+            canvas.bringObjectToFront(overlay);
+          }
+        }
+
         canvas.requestRenderAll();
       } catch (err) {
         console.error("Error loading mockup assets", err);
@@ -83,7 +183,7 @@ export default function MockupEditor({ config }: MockupEditorProps) {
     };
 
     loadAssets();
-  }, [canvas, config]);
+  }, [canvas, config, activeVariation, logoImage]);
 
   const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -114,8 +214,10 @@ export default function MockupEditor({ config }: MockupEditorProps) {
         const scaleX = config.transform.width / img.width;
         const scaleY = config.transform.height / img.height;
         const scale = Math.min(scaleX, scaleY);
-        img.scaleX = scale;
-        img.scaleY = scale;
+        img.set({
+          scaleX: scale,
+          scaleY: scale,
+        });
       }
 
       if (logoImage) {
@@ -138,6 +240,30 @@ export default function MockupEditor({ config }: MockupEditorProps) {
       canvas.requestRenderAll();
     };
     reader.readAsDataURL(file);
+  };
+
+  const handleAutoFit = () => {
+    if (!canvas || !logoImage) return;
+
+    // Reset rotation and apply transform defaults
+    logoImage.set({
+      left: config.transform.left,
+      top: config.transform.top,
+      angle: config.transform.angle || 0,
+    });
+
+    // Scale to fit
+    if (logoImage.width && logoImage.height) {
+      const scaleX = config.transform.width / logoImage.width;
+      const scaleY = config.transform.height / logoImage.height;
+      const scale = Math.min(scaleX, scaleY);
+      logoImage.set({
+        scaleX: scale,
+        scaleY: scale,
+      });
+    }
+
+    canvas.requestRenderAll();
   };
 
   const handleExport = () => {
@@ -170,6 +296,13 @@ export default function MockupEditor({ config }: MockupEditorProps) {
         </div>
 
         <div className="flex gap-3">
+          <button
+            onClick={handleAutoFit}
+            className="flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium rounded-lg transition-colors"
+          >
+            <Maximize className="w-4 h-4" />
+            Auto-Fit
+          </button>
           <label className="cursor-pointer flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium rounded-lg transition-colors">
             <Upload className="w-4 h-4" />
             Upload Logo
@@ -207,6 +340,31 @@ export default function MockupEditor({ config }: MockupEditorProps) {
       <p className="text-center text-sm text-slate-500">
         Drag, scale, and rotate your logo to fit perfectly.
       </p>
+
+      {config.variations && config.variations.length > 0 && (
+        <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+          <h3 className="text-sm font-semibold text-slate-900 mb-3">Variations</h3>
+          <div className="flex gap-3 overflow-x-auto pb-2">
+            {config.variations.map((v) => (
+              <button
+                key={v.id}
+                onClick={() => setActiveVariation(v.id)}
+                className={`flex flex-col items-center gap-2 p-2 rounded-lg border-2 transition-all min-w-[80px] ${
+                  activeVariation === v.id
+                    ? "border-indigo-600 bg-indigo-50"
+                    : "border-transparent hover:bg-slate-50"
+                }`}
+              >
+                <div
+                  className="w-10 h-10 rounded-full border shadow-sm"
+                  style={{ backgroundColor: v.color }}
+                />
+                <span className="text-xs font-medium text-slate-700">{v.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
