@@ -21,6 +21,13 @@ export interface MockupConfig {
     title: string;
     description: string;
   };
+  variations?: {
+    id: string;
+    name: string;
+    color: string;
+    background?: string;
+    overlay?: string;
+  }[];
 }
 
 export const mockups: MockupConfig[] = [
@@ -44,6 +51,23 @@ export const mockups: MockupConfig[] = [
       title: "Coffee Cup Logo Mockup",
       description: "Preview your logo on a realistic coffee cup.",
     },
+    variations: [
+      {
+        id: "default",
+        name: "Default",
+        color: "#ffffff",
+      },
+      {
+        id: "dark",
+        name: "Dark Moody",
+        color: "#2a2a2a",
+      },
+      {
+        id: "kraft",
+        name: "Kraft Paper",
+        color: "#d4b895",
+      },
+    ],
   },
   {
     slug: "tshirt",
@@ -65,6 +89,23 @@ export const mockups: MockupConfig[] = [
       title: "T-Shirt Logo Mockup",
       description: "Preview your logo on a realistic t-shirt.",
     },
+    variations: [
+      {
+        id: "default",
+        name: "White",
+        color: "#ffffff",
+      },
+      {
+        id: "black",
+        name: "Black",
+        color: "#1a1a1a",
+      },
+      {
+        id: "navy",
+        name: "Navy",
+        color: "#1c2b4d",
+      },
+    ],
   },
 ];
 
