@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blog-data'
 import { mockups } from '@/lib/mockups'
+import { programmaticPages } from '@/lib/programmatic-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online'
@@ -31,5 +32,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  return [...staticRoutes, ...mockupRoutes, ...blogRoutes]
+
+  const programmaticRoutes = programmaticPages.map((page) => ({
+    url: `${baseUrl}/${page.type === 'mockup' ? 'mockups' : 'industries'}/${page.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }))
+
+  return [...staticRoutes, ...mockupRoutes, ...blogRoutes, ...programmaticRoutes]
 }
