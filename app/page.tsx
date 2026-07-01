@@ -24,7 +24,7 @@ export default function Home() {
       </div>
 
       {/* Templates Grid */}
-      <div className="mb-12">
+      <div id="templates" className="mb-12">
         <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
           <ImageIcon className="w-6 h-6 text-indigo-600" />
           Trending Templates
