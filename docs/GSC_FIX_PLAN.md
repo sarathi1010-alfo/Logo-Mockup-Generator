@@ -13,8 +13,8 @@ This document outlines the strategy for identifying and resolving indexing issue
 ## 2. Resolve "Discovered/Crawled - Not Indexed"
 These are often caused by low perceived value or duplicate content.
 - **Fix:**
-  - Ensure all programmatic pages have unique, high-quality content and unique FAQs (implemented in `lib/programmatic-data.ts`).
-  - Strengthen internal linking from high-authority pages (e.g., Tier 1 blog posts) to these programmatic pages.
+  - Ensure all programmatic pages (e.g., /mockups/coffee-cup-logo-mockup) have unique, high-quality content and unique FAQs (implemented in `lib/programmatic-data.ts`).
+  - Strengthen internal linking from high-authority pages (e.g., /blog/logo-mockup-guide) to these programmatic pages.
   - Use the IndexNow API to signal content updates (scripts implemented in `scripts/ping-indexnow.mjs`).
 
 ## 3. Resolve "Blocked by robots.txt"
