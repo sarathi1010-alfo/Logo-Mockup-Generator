@@ -12,6 +12,7 @@ const URLS_TO_TEST = [
   '/industries/fashion-logo-mockup',
   '/industries/food-beverage-logo-mockup',
   '/industries/tech-startup-logo-mockup',
+  '/templates',
 ];
 
 const BASE_URL = 'http://localhost:3000';
@@ -23,6 +24,14 @@ test.describe('Verify New URLs and Functionality', () => {
       expect(response.status()).toBe(200);
     });
   }
+
+  test('Templates page renders correctly', async ({ page }) => {
+    await page.goto(`${BASE_URL}/templates`);
+    await expect(page.locator('h1')).toContainText('Mockup Templates');
+    const links = page.locator('a[href^="/mockup/"]');
+    const count = await links.count();
+    expect(count).toBeGreaterThan(0);
+  });
 
   test('Main page mockup generation functionality works', async ({ page }) => {
     // 1. Navigate to main page
@@ -41,8 +50,6 @@ test.describe('Verify New URLs and Functionality', () => {
       'base64'
     );
 
-// Since I don't know the exact DOM of the editor, I'll write a generic approach
-    // If this fails, we will need to inspect the editor DOM
     const fileInput = await page.$('input[type="file"]');
     if (fileInput) {
        await fileInput.setInputFiles({
