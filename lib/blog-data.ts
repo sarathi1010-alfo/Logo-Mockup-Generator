@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'what-is-a-logo-mockup',
     title: 'The Complete Guide to Logo Mockups — Everything You Need to Know',
     description: 'Learn what a logo mockup is, why it is essential for client presentations, and how to create photorealistic mockups instantly.',
-    date: '2026-06-29',
+    date: '2026-07-02',
     author: 'MockBrand Editorial Team',
     category: 'Fundamentals',
     content: `
@@ -42,7 +42,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Mockup Types',
     content: `
       <h2>The best coffee cup mockups feature realistic lighting, natural shadows, and proper curvature to make your brand identity look authentic and premium.</h2>
-      <p>Whether you're designing for a local café, a national coffee chain, or a boutique roaster, presenting your logo on a realistic coffee cup mockup is essential. It bridges the gap between digital design and physical reality.</p>
+      <p>Whether you're designing for a local café, a national coffee chain, or a boutique roaster, presenting your logo on a realistic coffee cup mockup is essential. It bridges the gap between digital design and physical reality. For more general tips, check out our guide on <a href="/blog/logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
 
       <h3>What Makes a Great Coffee Cup Mockup</h3>
       <ul>
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Fundamentals',
     content: `
       <h2>The key difference is that a logo mockup is a single stylized image showing the logo in a real-world setting, while a logo presentation is a comprehensive document that tells the brand's story, explains the design strategy, and includes multiple mockups.</h2>
-      <p>When presenting design work to a client, terminology matters. Knowing when to simply send a mockup versus when to build a full presentation can be the difference between an immediate approval and endless revisions.</p>
+      <p>When presenting design work to a client, terminology matters. Knowing when to simply send a mockup versus when to build a full presentation can be the difference between an immediate approval and endless revisions. If you're new to this, read our <a href="/blog/logo-mockup-guide">logo mockup guide</a> for a head start.</p>
 
       <h3>What is a Logo Mockup?</h3>
       <p>A logo mockup is an application of the logo onto a realistic template (e.g., a business card, a <a href="/mockup/coffee-cup">coffee cup</a>, or a storefront). Its primary purpose is visualization.</p>
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'how-to-create-logo-mockup',
     title: 'How to Create a Logo Mockup — Step-by-Step Guide',
     description: 'A beginner-friendly guide on how to create professional, photorealistic logo mockups instantly without complex software.',
-    date: '2025-05-14',
+    date: '2026-07-01',
     author: 'MockBrand Editorial Team',
     category: 'Fundamentals',
     content: `
@@ -138,7 +138,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'logo-mockup-guide',
     title: 'How to Create Realistic Logo Mockups for Your Brand',
     description: 'Learn the exact steps to create realistic logo mockups for your brand to elevate your client presentations and showcase your designs professionally.',
-    date: '2026-06-28',
+    date: '2026-07-02',
     author: 'MockBrand Editorial Team',
     category: 'Guides',
     content: `
