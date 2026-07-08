@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About MockBrand | Free Online Logo Mockup Generator',
-  description: 'Learn about MockBrand, part of the alfo.online ecosystem. We provide high-quality, free logo mockups instantly in your browser with no software required.',
+  title: 'About MockupForge | Free Online Logo Mockup Generator',
+  description: 'Learn about MockupForge, part of the alfo.online ecosystem. We provide high-quality, free logo mockups instantly in your browser with no software required.',
 };
 
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 prose prose-slate prose-lg">
       <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-8">
-        About MockBrand
+        About MockupForge
       </h1>
       <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-        MockBrand is a free, instant logo mockup generator designed to help creators, agencies, and business owners visualize their brand in the real world.
+        MockupForge is a free, instant logo mockup generator designed to help creators, agencies, and business owners visualize their brand in the real world.
         Upload your logo once and instantly preview it across our library of high-resolution, realistic templates—no software required.
       </p>
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
 
       <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">The alfo.online Ecosystem</h2>
       <p>
-        MockBrand is proudly part of the <a href="https://alfo.online" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800">alfo.online</a> ecosystem of utility micro-tools.
+        MockupForge is proudly part of the <a href="https://alfo.online" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800">alfo.online</a> ecosystem of utility micro-tools.
         Our tools are designed to work seamlessly together to empower your creative workflow:
       </p>
       <ul>

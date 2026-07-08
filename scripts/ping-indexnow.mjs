@@ -2,7 +2,7 @@
  * Script to ping IndexNow API with newly updated URLs
  */
 const API_KEY = process.env.INDEXNOW_API_KEY || 'dummy_key_for_testing';
-const HOST = process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL).host : 'mockbrand.alfo.online';
+const HOST = process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL).host : 'mockupforge.alfo.online';
 
 const URLS_TO_PING = [
   `https://${HOST}/blog/logo-mockup-guide`,
