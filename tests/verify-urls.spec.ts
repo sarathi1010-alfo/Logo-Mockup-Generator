@@ -14,7 +14,7 @@ const URLS_TO_TEST = [
   '/industries/tech-startup-logo-mockup',
 ];
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'http://127.0.0.1:3000';
 
 test.describe('Verify New URLs and Functionality', () => {
   for (const url of URLS_TO_TEST) {

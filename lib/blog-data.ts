@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'what-is-a-logo-mockup',
     title: 'The Complete Guide to Logo Mockups — Everything You Need to Know',
     description: 'Learn what a logo mockup is, why it is essential for client presentations, and how to create photorealistic mockups instantly.',
-    date: '2026-07-02',
+    date: '2025-05-14',
     author: 'MockupForge Editorial Team',
     category: 'Fundamentals',
     content: `
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'how-to-create-logo-mockup',
     title: 'How to Create a Logo Mockup — Step-by-Step Guide',
     description: 'A beginner-friendly guide on how to create professional, photorealistic logo mockups instantly without complex software.',
-    date: '2026-07-08',
+    date: '2025-05-14',
     author: 'MockupForge Editorial Team',
     category: 'Fundamentals',
     content: `
@@ -159,9 +159,6 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Texture Blending:</strong> Whether it's the grain of wood or the weave of a canvas bag, the texture should "show through" the logo for an authentic look.</li>
       </ul>
       <p>Professional mockup generators like <a href="/">MockupForge</a> handle all these complex calculations automatically, ensuring your logo looks perfectly integrated every single time. Check out our <a href="/#templates">available templates</a> to get started.</p>
-
-      <h3>Selecting the Right Template for Your Industry</h3>
-      <p>Context is king. A beautiful mockup is useless if it doesn't align with the brand's industry. Here is how to choose the right environment for your logo:</p>
 
       <h3>Industry-Specific Guide: Selecting the Right Context</h3>
       <p>Context is king. A beautiful mockup is useless if it doesn't align with the brand's industry. Here is how to choose the right environment for your logo:</p>
