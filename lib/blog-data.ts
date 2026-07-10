@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'how-to-create-logo-mockup',
     title: 'How to Create a Logo Mockup — Step-by-Step Guide',
     description: 'A beginner-friendly guide on how to create professional, photorealistic logo mockups instantly without complex software.',
-    date: '2025-05-14',
+    date: '2026-07-08',
     author: 'MockupForge Editorial Team',
     category: 'Fundamentals',
     content: `
