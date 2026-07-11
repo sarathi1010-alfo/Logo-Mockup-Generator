@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online'),
-  title: "MockupForge | Free Logo Mockup Generator",
+  title: "MockBrand | Free Logo Mockup Generator",
   description: "Turn any logo into premium real-world mockups in seconds.",
   other: {
     "google-adsense-account": "ca-pub-6393936268623951",
