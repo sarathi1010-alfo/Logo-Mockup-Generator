@@ -11,7 +11,7 @@ export function Navbar() {
               <LayoutTemplate className="w-5 h-5" />
             </div>
             <span className="font-bold text-xl tracking-tight text-slate-900">
-              MockupForge
+              MockBrand
             </span>
           </Link>
           <div className="flex items-center gap-4">
