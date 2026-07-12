@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'what-is-a-logo-mockup',
     title: 'The Complete Guide to Logo Mockups — Everything You Need to Know',
     description: 'Learn what a logo mockup is, why it is essential for client presentations, and how to create photorealistic mockups instantly.',
-    date: '2025-05-14',
+    date: '2026-07-03',
     author: 'MockBrand Editorial Team',
     category: 'Fundamentals',
     content: `
@@ -138,7 +138,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'logo-mockup-guide',
     title: 'How to Create Realistic Logo Mockups for Your Brand',
     description: 'Learn the exact steps to create realistic logo mockups for your brand to elevate your client presentations and showcase your designs professionally.',
-    date: '2026-07-02',
+    date: '2026-07-08',
     author: 'MockBrand Editorial Team',
     category: 'Guides',
     content: `
