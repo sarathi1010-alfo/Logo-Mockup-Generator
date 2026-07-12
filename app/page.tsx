@@ -64,6 +64,36 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Features Section */}
+      <div className="mb-20 bg-slate-50 rounded-3xl p-8 md:p-12">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">Professional Mockups Made Simple</h2>
+          <p className="text-slate-600">
+            Why spend hours in Photoshop when you can get better results in seconds? Our AI-powered system handles the complex design work for you.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <h3 className="font-bold text-lg mb-2">Smart Perspective</h3>
+            <p className="text-slate-600 text-sm">Automatically wraps your logo around objects for a natural, photorealistic look.</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <h3 className="font-bold text-lg mb-2">Lighting & Shadows</h3>
+            <p className="text-slate-600 text-sm">Integrates your design with the scene's environmental lighting and ambient shadows.</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+            <h3 className="font-bold text-lg mb-2">High-Res Exports</h3>
+            <p className="text-slate-600 text-sm">Download your mockups in 4K resolution, perfect for print and high-end presentations.</p>
+          </div>
+        </div>
+        <div className="mt-12 text-center">
+          <p className="text-slate-500 mb-4">New to mockups? Check out our authority guide:</p>
+          <Link href="/blog/logo-mockup-guide" className="text-indigo-600 font-semibold hover:underline">
+            How to Create Realistic Logo Mockups for Your Brand →
+          </Link>
+        </div>
+      </div>
+
     </div>
   );
 }
