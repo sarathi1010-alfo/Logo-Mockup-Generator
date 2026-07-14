@@ -5,7 +5,7 @@ import path from 'path';
 // Script to submit sitemap to Google Search Console API
 // Can be run locally or within a CI/CD pipeline after a successful deploy.
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.mockupforge.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online';
 const sitemaps = [
   `${SITE_URL}/sitemap.xml`,
 ];
