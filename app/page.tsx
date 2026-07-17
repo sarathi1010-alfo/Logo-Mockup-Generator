@@ -79,7 +79,7 @@ export default function Home() {
           </div>
           <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
             <h3 className="font-bold text-lg mb-2">Lighting & Shadows</h3>
-            <p className="text-slate-600 text-sm">Integrates your design with the scene's environmental lighting and ambient shadows.</p>
+            <p className="text-slate-600 text-sm">Integrates your design with the scene&apos;s environmental lighting and ambient shadows.</p>
           </div>
           <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
             <h3 className="font-bold text-lg mb-2">High-Res Exports</h3>

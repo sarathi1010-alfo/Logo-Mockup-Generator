@@ -3,13 +3,13 @@ import { test, expect } from '@playwright/test';
 const baseUrl = 'http://127.0.0.1:3000';
 
 const urls = [
-  '/blog/logo-mockup-guide',
+  '/blog/realistic-logo-mockup-guide',
   '/mockups/coffee-cup-logo-mockup',
   '/mockups/t-shirt-logo-mockup',
   '/mockups/tshirt-logo-mockup',
-  '/mockups/stationery-mockup',
-  '/mockups/billboard-mockup',
-  '/mockups/signage-mockup',
+  '/mockups/stationery-logo-mockup',
+  '/mockups/billboard-logo-mockup',
+  '/mockups/signage-logo-mockup',
   '/mockups/product-packaging-mockup',
   '/industries/fashion-logo-mockup',
   '/industries/food-beverage-logo-mockup',
@@ -31,7 +31,7 @@ test.describe('MockBrand Content Verification', () => {
   }
 
   test('Verify Tier 1 Article has AI Snapshot and Schema', async ({ page }) => {
-    await page.goto(`${baseUrl}/blog/logo-mockup-guide`);
+    await page.goto(`${baseUrl}/blog/realistic-logo-mockup-guide`);
 
     // Check AI Snapshot placement
     const h2 = await page.locator('h2:has-text("How to create realistic logo mockups for your brand?")');

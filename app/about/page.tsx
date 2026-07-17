@@ -20,7 +20,7 @@ export default function AboutPage() {
       <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Our Mission</h2>
       <p>
         Presenting a logo professionally shouldn&apos;t require expensive software, complex PSD files, or a background in graphic design.
-        Our mission is to democratize design presentation by making photorealistic mockups accessible to everyone, instantly.
+        Our mission is to democratize design presentation by making photorealistic mockups accessible to everyone, instantly. For tips on maximizing your presentations, check out our guide on <Link href="/blog/realistic-logo-mockup-guide" className="text-indigo-600 hover:text-indigo-800 underline">How to Create Realistic Logo Mockups for Your Brand</Link>.
       </p>
 
       <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">The alfo.online Ecosystem</h2>

@@ -3,13 +3,13 @@ import { test, expect } from '@playwright/test';
 const BASE_URL = 'http://localhost:3000';
 
 const slugs = [
-  '/blog/logo-mockup-guide',
+  '/blog/realistic-logo-mockup-guide',
   '/mockups/coffee-cup-logo-mockup',
   '/mockups/t-shirt-logo-mockup',
   '/mockups/tshirt-logo-mockup',
-  '/mockups/stationery-mockup',
-  '/mockups/billboard-mockup',
-  '/mockups/signage-mockup',
+  '/mockups/stationery-logo-mockup',
+  '/mockups/billboard-logo-mockup',
+  '/mockups/signage-logo-mockup',
   '/mockups/product-packaging-mockup',
   '/industries/fashion-logo-mockup',
   '/industries/food-beverage-logo-mockup',
