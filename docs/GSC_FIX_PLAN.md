@@ -30,3 +30,10 @@ These are often caused by low perceived value or duplicate content.
 ## 5. Continuous Improvement
 - **Sitemap Maintenance:** `app/sitemap.ts` automatically updates as new blog posts or programmatic pages are added.
 - **Schema Validation:** Ensure JSON-LD (Article, FAQ, etc.) is valid to qualify for rich snippets and improve visibility.
+
+## 6. Audit Simulation (Date: [Current Date])
+- **Issue Found:** 2 old test subdomain pages showing "Crawled - currently not indexed" (old draft mockups).
+- **Fix Plan Generated:**
+  - Add internal links from the new Tier 1 article to those 2 legacy pages to boost their perceived importance.
+  - Request re-crawling via the GSC URL Inspection tool for those specific paths.
+  - Ensure they are not blocked by robots.txt (they aren't).

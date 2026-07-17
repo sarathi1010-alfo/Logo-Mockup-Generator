@@ -1,13 +1,15 @@
 import { test, expect } from '@playwright/test';
 
 const URLS_TO_TEST = [
-  '/blog/logo-mockup-guide',
+  '/blog/realistic-logo-mockup-guide',
+  '/features',
   '/mockups/coffee-cup-logo-mockup',
   '/mockups/t-shirt-logo-mockup',
   '/mockups/tshirt-logo-mockup',
-  '/mockups/stationery-mockup',
-  '/mockups/billboard-mockup',
-  '/mockups/signage-mockup',
+  '/mockups/stationery-logo-mockup',
+  '/mockups/billboard-logo-mockup',
+  '/mockups/signage-logo-mockup',
+  '/mockups/hat-cap-logo-mockup',
   '/mockups/product-packaging-mockup',
   '/industries/fashion-logo-mockup',
   '/industries/food-beverage-logo-mockup',

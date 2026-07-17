@@ -46,7 +46,7 @@ export const programmaticPages: ProgrammaticPage[] = [
     ]
   },
   {
-    slug: 'stationery-mockup',
+    slug: 'stationery-logo-mockup',
     type: 'mockup',
     title: 'Free Stationery Logo Mockup Generator | MockBrand',
     h1: 'Stationery Logo Mockup Generator',
@@ -58,7 +58,7 @@ export const programmaticPages: ProgrammaticPage[] = [
     ]
   },
   {
-    slug: 'billboard-mockup',
+    slug: 'billboard-logo-mockup',
     type: 'mockup',
     title: 'Free Billboard Logo Mockup Generator | MockBrand',
     h1: 'Billboard Logo Mockup Generator',
@@ -70,7 +70,7 @@ export const programmaticPages: ProgrammaticPage[] = [
     ]
   },
   {
-    slug: 'signage-mockup',
+    slug: 'signage-logo-mockup',
     type: 'mockup',
     title: 'Free Signage Logo Mockup Generator | MockBrand',
     h1: 'Signage Logo Mockup Generator',
@@ -129,6 +129,20 @@ export const programmaticPages: ProgrammaticPage[] = [
       { question: 'Are there mockups for app screens?', answer: 'Yes, we provide high-resolution smartphone and tablet mockups to showcase your app icon or digital logo perfectly.' }
     ]
   }
+  ,
+  {
+    slug: 'hat-cap-logo-mockup',
+    type: 'mockup',
+    title: 'Free Hat & Cap Logo Mockup Generator | MockBrand',
+    h1: 'Hat & Cap Logo Mockup: Headwear Branding Simplified',
+    description: 'Create realistic hat and cap logo mockups instantly. Ideal for fashion brands and headwear merchandise.',
+    content: '<h2>Preview Your Brand on Headwear</h2><p>Visualize your logo on different styles of hats and caps. Our generator provides photorealistic previews for your merchandise.</p><h3>Perfect for Merch and Apparel Brands</h3><p>Ensure your design looks great on headwear before you print or embroider.</p>',
+    faqs: [
+      { question: 'What types of hats can I mockup?', answer: 'We offer various styles, including baseball caps, snapbacks, and beanies.' },
+      { question: 'Can I change the hat color?', answer: 'Yes, you can easily change the color of the hat to match your brand.' }
+    ]
+  },
+
 ];
 
 export function getProgrammaticPage(slug: string, type: 'mockup' | 'industry'): ProgrammaticPage | undefined {

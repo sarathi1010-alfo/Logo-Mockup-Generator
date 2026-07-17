@@ -27,7 +27,7 @@ jobs:
       - name: Run build
         run: npm run build
         env:
-          NEXT_PUBLIC_SITE_URL: https://www.mockupforge.com
+          NEXT_PUBLIC_SITE_URL: https://mockbrand.alfo.online
 
       - name: Verify SEO Tags
         run: |
@@ -40,4 +40,4 @@ jobs:
         run: node scripts/submit-sitemap.mjs
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-          NEXT_PUBLIC_SITE_URL: https://www.mockupforge.com
+          NEXT_PUBLIC_SITE_URL: https://mockbrand.alfo.online
