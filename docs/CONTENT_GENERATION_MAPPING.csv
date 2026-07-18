@@ -1,4 +1,3 @@
-entity_a,entity_b,use_case,features,pros_a,cons_a,pros_b,cons_b,verdict,internal_links
-mockup_type,key_elements,best_practices,industries,technical_specs,tags
-industry,best_mockups,key_considerations,presentation_tips,examples,tags
-term,definition,how_it_works,example_industry,importance,comparison_term,tags
+URL_Slug,H1_Title,Entity_A,Entity_B,Use_Case,Feature_1_Bool,Feature_2_Bool,Feature_3_Bool,Feature_4_Bool,Feature_5_Bool,Pros_A_Array,Cons_A_Array,Pros_B_Array,Cons_B_Array,Verdict_Winner,Best_For_Scenario,Internal_Link_1,Internal_Link_2
+Mockup_Type,H1_Title,Best_For_Industries_Array,Key_Elements_Array,Best_Practices_JSON,Industries_Array,Tags
+Industry,H1_Title,Stat_1,Stat_2,Best_Mockups_Array,Key_Considerations_JSON,Examples_JSON,Tags

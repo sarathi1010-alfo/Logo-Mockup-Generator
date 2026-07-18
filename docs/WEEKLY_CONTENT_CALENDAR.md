@@ -1,13 +1,22 @@
-# Weekly Content Calendar
+# DELIVERABLE 2: THE REPEATABLE WEEKLY CALENDAR (MON-SUN)
 
-Repeatable Monday-Sunday schedule for MockBrand content production.
+**Monday (Fundamentals & Best Practices):**
+1 Pillar (Weekly Hub). 5 Micro-Answers (What is...). 3 Clusters.
 
-| Day | Task | Content Focus |
-| :--- | :--- | :--- |
-| **Monday** | Pillar/Fundamentals | Education, Basics, Logo Prep |
-| **Tuesday** | Comparisons | MockBrand vs Competitors (Placeit, Smartmockups, Canva) |
-| **Wednesday** | Mockup Type Dives | Asset-specific guides (Cups, Shirts, Signage) |
-| **Thursday** | Industry Guides | Verticals (Cafes, Tech, Real Estate) |
-| **Friday** | Strategy/Ecosystem | Presentations & Alfo Suite Integration |
-| **Saturday** | Internal Linking Audit | Linking Cluster to Pillars |
-| **Sunday** | Refresh & Pruning | Date updates, GSC troubleshooting |
+**Tuesday (Comparisons):**
+2 Comparison Pages (MockBrand vs Competitor X/Y). 5 Micros. 3 Programmatic pages.
+
+**Wednesday (Mockup Types):**
+2 Mockup Type Deep-Dives. 5 Micros. 3 Programmatic pages.
+
+**Thursday (Industry Guides):**
+2 Industry/Use-Case Guides. 5 Micros. 3 Programmatic pages.
+
+**Friday (Presentation & Strategy):**
+2 Clusters on client presentations, portfolio building. 5 Micros.
+
+**Saturday (Planning & Audit):**
+Interlinking Audit (ensure every new page links to 3+ others). Schema Validation. 4xx Zombie Scan.
+
+**Sunday (Pruning & Refreshing):**
+Update 1 legacy placeholder post (e.g., turn /templates into a real page). Refresh lastmod dates. Regenerate sitemap & Ping Google/IndexNow.
