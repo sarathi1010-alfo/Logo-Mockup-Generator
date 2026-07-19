@@ -34,18 +34,6 @@ export const programmaticPages: ProgrammaticPage[] = [
     ]
   },
   {
-    slug: 'tshirt-logo-mockup',
-    type: 'mockup',
-    title: 'Free Tshirt Logo Mockup Generator | MockBrand',
-    h1: 'Tshirt Logo Mockup Generator',
-    description: 'Create stunning tshirt logo mockups in seconds without Photoshop. Ideal for modern clothing brands and merchandise.',
-    content: '<h2>Create Photorealistic Tshirt Mockups Instantly</h2><p>Instantly visualize your merch designs. Upload your logo and get a photorealistic tshirt mockup ready for your client presentation or online store.</p><h3>No Design Skills Required</h3><p>Our one-click system handles all the lighting and texture mapping for you, giving you professional results in seconds.</p>',
-    faqs: [
-      { question: 'How realistic are the tshirt mockups?', answer: 'Our mockups use advanced lighting and texture mapping to ensure your logo looks like it is actually printed on the fabric.' },
-      { question: 'Is it free to use the tshirt mockup generator?', answer: 'Yes, you can generate and preview your mockups for free using our one-click system.' }
-    ]
-  },
-  {
     slug: 'stationery-logo-mockup',
     type: 'mockup',
     title: 'Free Stationery Logo Mockup Generator | MockBrand',
