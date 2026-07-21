@@ -6,7 +6,6 @@ const urls = [
   '/blog/realistic-logo-mockup-guide',
   '/mockups/coffee-cup-logo-mockup',
   '/mockups/t-shirt-logo-mockup',
-  '/mockups/tshirt-logo-mockup',
   '/mockups/stationery-logo-mockup',
   '/mockups/billboard-logo-mockup',
   '/mockups/signage-logo-mockup',
