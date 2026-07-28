@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         <div className="mt-12 text-center">
           <p className="text-slate-500 mb-4">New to mockups? Check out our authority guide:</p>
-          <Link href="/blog/logo-mockup-guide" className="text-indigo-600 font-semibold hover:underline">
+          <Link href="/blog/realistic-logo-mockup-guide" className="text-indigo-600 font-semibold hover:underline">
             How to Create Realistic Logo Mockups for Your Brand →
           </Link>
         </div>

@@ -5,7 +5,7 @@ const API_KEY = process.env.INDEXNOW_API_KEY || 'dummy_key_for_testing';
 const HOST = process.env.NEXT_PUBLIC_SITE_URL ? new URL(process.env.NEXT_PUBLIC_SITE_URL).host : 'mockbrand.alfo.online';
 
 const URLS_TO_PING = [
-  `https://${HOST}/blog/logo-mockup-guide`,
+  `https://${HOST}/blog/realistic-logo-mockup-guide`,
   `https://${HOST}/mockups/coffee-cup-logo-mockup`,
   `https://${HOST}/mockups/t-shirt-logo-mockup`,
   `https://${HOST}/mockups/tshirt-logo-mockup`,

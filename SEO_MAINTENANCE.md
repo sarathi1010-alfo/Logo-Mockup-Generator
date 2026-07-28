@@ -6,7 +6,7 @@ This document outlines the standard operating procedure for monitoring and maint
 
 *   **Sitemap Submission:** Ensure the automated CI/CD pipeline successfully submitted the updated `sitemap.xml` to GSC via the API (`scripts/submit-sitemap.mjs`).
 *   **IndexNow Ping:** Verify that the `scripts/ping-indexnow.mjs` script ran successfully, notifying Bing and other participating engines of the new URLs.
-*   **Live URL Inspection:** Use the "URL Inspection" tool in GSC on the newly published Tier 1 article (`/blog/logo-mockup-guide`) to request immediate indexing and verify that Googlebot can fetch the page without errors (Status: 200). Ensure the rendered HTML contains the valid Article schema and AEO text.
+*   **Live URL Inspection:** Use the "URL Inspection" tool in GSC on the newly published Tier 1 article (`/blog/realistic-logo-mockup-guide`) to request immediate indexing and verify that Googlebot can fetch the page without errors (Status: 200). Ensure the rendered HTML contains the valid Article schema and AEO text.
 
 ## 2. Weekly Coverage Check (7-14 Days Post-Deploy)
 

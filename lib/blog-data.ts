@@ -17,8 +17,8 @@ export const blogPosts: BlogPost[] = [
     author: 'MockBrand Editorial Team',
     category: 'Fundamentals',
     content: `
-      <h2>The best way to present a logo is by using a <a href="/blog/logo-mockup-guide">realistic mockup</a> because it helps clients visualize the brand in the real world, increasing approval rates and perceived value.</h2>
-      <p>A logo mockup is a template that allows you to showcase your logo design in a realistic environment, such as on a coffee cup, a storefront, or a business card. Instead of presenting a flat, 2D logo on a white background, mockups provide context and scale. For a detailed walkthrough, see our professional guide on <a href="/blog/logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
+      <h2>The best way to present a logo is by using a <a href="/blog/realistic-logo-mockup-guide">realistic mockup</a> because it helps clients visualize the brand in the real world, increasing approval rates and perceived value.</h2>
+      <p>A logo mockup is a template that allows you to showcase your logo design in a realistic environment, such as on a coffee cup, a storefront, or a business card. Instead of presenting a flat, 2D logo on a white background, mockups provide context and scale. For a detailed walkthrough, see our professional guide on <a href="/blog/realistic-logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
 
       <h3>Why You Need Logo Mockups for Client Presentations</h3>
       <ul>
@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <h3>How to Choose the Right Mockup for Your Logo</h3>
-      <p>When selecting a mockup, consider the brand's industry and target audience. A coffee shop logo belongs on a mug or storefront, while a tech startup logo might look best on a laptop or smartphone screen. For a more detailed breakdown, read our guide on <a href="/blog/logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
+      <p>When selecting a mockup, consider the brand's industry and target audience. A coffee shop logo belongs on a mug or storefront, while a tech startup logo might look best on a laptop or smartphone screen. For a more detailed breakdown, read our guide on <a href="/blog/realistic-logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
 
       <p>With MockBrand, you can instantly preview your logo across dozens of high-quality mockups without needing Photoshop or complex software.</p>
     `,
@@ -42,7 +42,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Mockup Types',
     content: `
       <h2>The best coffee cup mockups feature realistic lighting, natural shadows, and proper curvature to make your brand identity look authentic and premium.</h2>
-      <p>Whether you're designing for a local café, a national coffee chain, or a boutique roaster, presenting your logo on a realistic coffee cup mockup is essential. It bridges the gap between digital design and physical reality. For more general tips, check out our guide on <a href="/blog/logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
+      <p>Whether you're designing for a local café, a national coffee chain, or a boutique roaster, presenting your logo on a realistic coffee cup mockup is essential. It bridges the gap between digital design and physical reality. For more general tips, check out our guide on <a href="/blog/realistic-logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
 
       <h3>What Makes a Great Coffee Cup Mockup</h3>
       <ul>
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Fundamentals',
     content: `
       <h2>The key difference is that a logo mockup is a single stylized image showing the logo in a real-world setting, while a logo presentation is a comprehensive document that tells the brand's story, explains the design strategy, and includes multiple mockups.</h2>
-      <p>When presenting design work to a client, terminology matters. Knowing when to simply send a mockup versus when to build a full presentation can be the difference between an immediate approval and endless revisions. If you're new to this, read our <a href="/blog/logo-mockup-guide">logo mockup guide</a> for a head start.</p>
+      <p>When presenting design work to a client, terminology matters. Knowing when to simply send a mockup versus when to build a full presentation can be the difference between an immediate approval and endless revisions. If you're new to this, read our <a href="/blog/realistic-logo-mockup-guide">logo mockup guide</a> for a head start.</p>
 
       <h3>What is a Logo Mockup?</h3>
       <p>A logo mockup is an application of the logo onto a realistic template (e.g., a business card, a <a href="/mockup/coffee-cup">coffee cup</a>, or a storefront). Its primary purpose is visualization.</p>
@@ -107,7 +107,7 @@ export const blogPosts: BlogPost[] = [
       <p>Upload your file into the generator. With MockBrand, the system automatically handles perspective, lighting, and shadow integration. You can preview the result in real-time.</p>
 
       <h3>Step 4: Download and Present</h3>
-      <p>Once you are satisfied with the preview, download the high-resolution image. Use these images in your portfolio, social media, or directly in client presentations to secure faster approvals. For more tips, read our comprehensive <a href="/blog/logo-mockup-guide">how to create realistic logo mockups</a> guide.</p>
+      <p>Once you are satisfied with the preview, download the high-resolution image. Use these images in your portfolio, social media, or directly in client presentations to secure faster approvals. For more tips, read our comprehensive <a href="/blog/realistic-logo-mockup-guide">how to create realistic logo mockups</a> guide.</p>
     `,
   },
   {
@@ -122,13 +122,13 @@ export const blogPosts: BlogPost[] = [
       <p>Mockups are powerful tools for selling a design, but when used incorrectly, they can actually cheapen the presentation and confuse the client. Here are the most common pitfalls and how to avoid them.</p>
 
       <h3>1. Using Non-Transparent Backgrounds</h3>
-      <p>Uploading a logo with a solid white block background onto a textured surface (like wood or fabric) instantly destroys the illusion. Always use a transparent PNG or SVG. Our comprehensive <a href="/blog/logo-mockup-guide">logo mockup guide</a> covers this in more detail.</p>
+      <p>Uploading a logo with a solid white block background onto a textured surface (like wood or fabric) instantly destroys the illusion. Always use a transparent PNG or SVG. Our comprehensive <a href="/blog/realistic-logo-mockup-guide">logo mockup guide</a> covers this in more detail.</p>
 
       <h3>2. Industry Mismatch</h3>
       <p>Context is everything. Putting a corporate law firm logo on a skateboard mockup might look cool, but it confuses the client. Choose templates that make sense for the business. A café logo belongs on a <a href="/mockup/coffee-cup">coffee cup</a> or storefront.</p>
 
       <h3>3. Ignoring Contrast</h3>
-      <p>If you place a dark logo on a dark mockup background, it becomes illegible. Always ensure there is sufficient contrast between your design and the template. If you struggle with color pairing, try using <a href="https://alfo.online" target="_blank">PaletteFlow</a> to refine your brand colors. Learning <a href="/blog/logo-mockup-guide">how to create realistic logo mockups</a> can help you avoid these mistakes entirely.</p>
+      <p>If you place a dark logo on a dark mockup background, it becomes illegible. Always ensure there is sufficient contrast between your design and the template. If you struggle with color pairing, try using <a href="https://alfo.online" target="_blank">PaletteFlow</a> to refine your brand colors. Learning <a href="/blog/realistic-logo-mockup-guide">how to create realistic logo mockups</a> can help you avoid these mistakes entirely.</p>
 
       <h3>4. Overwhelming the Presentation</h3>
       <p>Showing 50 different mockups can lead to decision fatigue. Select 3 to 5 high-quality, highly relevant mockups to include in your presentation. Quality always trumps quantity.</p>
