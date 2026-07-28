@@ -8,7 +8,7 @@
 ## Action Plan
 1. **Content Enrichment:** All 10 programmatic pages have been verified to have unique content and at least 2 unique FAQs to differentiate them from basic templates. (Completed)
 2. **Internal Link Strengthening:**
-   - The new Tier 1 Authority Guide (`/blog/logo-mockup-guide`) now links to `/` and `/templates`.
+   - The new Tier 1 Authority Guide (`/blog/realistic-logo-mockup-guide`) now links to `/` and `/templates`.
    - Programmatic pages are linked within the `sitemap.ts`.
    - *Future Action:* Add a "Related Mockups" widget to the blog sidebar to further interlink programmatic pages.
 3. **Indexing Signal:**
