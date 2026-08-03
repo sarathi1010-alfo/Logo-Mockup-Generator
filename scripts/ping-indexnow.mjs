@@ -8,14 +8,14 @@ const URLS_TO_PING = [
   `https://${HOST}/blog/realistic-logo-mockup-guide`,
   `https://${HOST}/mockups/coffee-cup-logo-mockup`,
   `https://${HOST}/mockups/t-shirt-logo-mockup`,
-  `https://${HOST}/mockups/tshirt-logo-mockup`,
-  `https://${HOST}/mockups/stationery-mockup`,
-  `https://${HOST}/mockups/billboard-mockup`,
-  `https://${HOST}/mockups/signage-mockup`,
+  `https://${HOST}/mockups/stationery-logo-mockup`,
+  `https://${HOST}/mockups/billboard-logo-mockup`,
+  `https://${HOST}/mockups/signage-logo-mockup`,
   `https://${HOST}/mockups/product-packaging-mockup`,
   `https://${HOST}/industries/fashion-logo-mockup`,
   `https://${HOST}/industries/food-beverage-logo-mockup`,
   `https://${HOST}/industries/tech-startup-logo-mockup`,
+  `https://${HOST}/mockups/hat-cap-logo-mockup`,
 ];
 
 async function pingIndexNow() {
