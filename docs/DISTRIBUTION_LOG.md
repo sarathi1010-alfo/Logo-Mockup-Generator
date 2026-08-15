@@ -15,7 +15,7 @@ Date: 2026-07-11
   - Importance of context in branding.
   - DIY vs Professional quality gap.
   - Industry-specific template selection.
-  - One-click generation via MockBrand.
+  - One-click generation via MockupForge.
 
 ## Visual Assets
 - [x] Before/After Coffee Cup comparison.

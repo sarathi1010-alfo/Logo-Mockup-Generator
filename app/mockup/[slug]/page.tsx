@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${mockup.seo.title} | MockBrand`,
+    title: `${mockup.seo.title} | MockupForge`,
     description: mockup.seo.description,
   };
 }

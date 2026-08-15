@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: 'Not Found' };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online';
 
   return {
-    title: `${post.title} | MockBrand`,
+    title: `${post.title} | MockupForge`,
     description: post.description,
     alternates: {
       canonical: `${baseUrl}/blog/${post.slug}`,
@@ -44,7 +44,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online';
 
   // Article Structured Data
   const jsonLd = {
@@ -60,7 +60,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     url: `${baseUrl}/blog/${post.slug}`,
     publisher: {
       '@type': 'Organization',
-      name: 'MockBrand',
+      name: 'MockupForge',
       logo: {
         '@type': 'ImageObject',
         url: `${baseUrl}/logo.png` // Placeholder
@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             href="/"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-full text-lg transition-all shadow-lg hover:shadow-xl"
           >
-            Try MockBrand For Free
+            Try MockupForge For Free
           </Link>
         </div>
       </article>

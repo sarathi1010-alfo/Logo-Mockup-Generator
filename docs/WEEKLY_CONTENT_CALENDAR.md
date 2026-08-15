@@ -4,7 +4,7 @@
 1 Pillar (Weekly Hub). 5 Micro-Answers (What is...). 3 Clusters.
 
 **Tuesday (Comparisons):**
-2 Comparison Pages (MockBrand vs Competitor X/Y). 5 Micros. 3 Programmatic pages.
+2 Comparison Pages (MockupForge vs Competitor X/Y). 5 Micros. 3 Programmatic pages.
 
 **Wednesday (Mockup Types):**
 2 Mockup Type Deep-Dives. 5 Micros. 3 Programmatic pages.

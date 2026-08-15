@@ -15,7 +15,7 @@ const urls = [
   '/industries/tech-startup-logo-mockup'
 ];
 
-test.describe('MockBrand Content Verification', () => {
+test.describe('MockupForge Content Verification', () => {
   for (const url of urls) {
     test(`Verify ${url} returns 200 and has no console errors`, async ({ page }) => {
       const consoleErrors: string[] = [];

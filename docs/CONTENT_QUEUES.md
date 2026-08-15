@@ -2,28 +2,28 @@
 
 **Week 1 (Fundamentals):**
 - Pillar: "The Ultimate Guide to Logo Mockups in 2026"
-- Comparisons: MockBrand vs Placeit, MockBrand vs Smartmockups
+- Comparisons: MockupForge vs Placeit, MockupForge vs Smartmockups
 - Mockup Types: Coffee Cup Mockup Deep-Dive, T-Shirt Mockup Deep-Dive
 - Industries: Cafes & Coffee Shops, Restaurants
 - Micro: What is a Logo Mockup?, Why Use Logo Mockups for Client Presentations?, What is a Photorealistic Mockup?, How to Choose the Right Mockup Template?, What is a Transparent PNG?
 
 **Week 2 (Mockup Types & Applications):**
 - Pillar: "The Complete Guide to Logo Mockup Types"
-- Comparisons: MockBrand vs Mediamodifier, MockBrand vs Hatchful
+- Comparisons: MockupForge vs Mediamodifier, MockupForge vs Hatchful
 - Mockup Types: Storefront Mockup Deep-Dive, Business Card Mockup Deep-Dive
 - Industries: Tech Startups, Corporate Brands
 - Micro: How to Prepare a Logo for Mockups?, What is the Difference Between a Mockup and a Presentation?, How Many Mockups to Show in a Presentation?, What is a Smart Object in Mockups?, How to Create a Logo Mockup for Free?
 
 **Week 3 (Technical & Design):**
 - Pillar: "The Ultimate Guide to Logo Preparation for Mockups"
-- Comparisons: MockBrand vs Canva, MockBrand vs Adobe Express
+- Comparisons: MockupForge vs Canva, MockupForge vs Adobe Express
 - Mockup Types: Laptop Mockup Deep-Dive, Smartphone Mockup Deep-Dive
 - Industries: Retail & Apparel, Real Estate
 - Micro: What is a Coffee Cup Mockup?, What is a T-Shirt Mockup?, What is a Storefront Mockup?, What is a Business Card Mockup?, What is a Laptop Mockup?
 
 **Week 4 (Presentation & Strategy):**
 - Pillar: "The Complete Guide to Client Presentations with Mockups"
-- Comparisons: MockBrand vs Mockup World, MockBrand vs Pixeden
+- Comparisons: MockupForge vs Mockup World, MockupForge vs Pixeden
 - Mockup Types: Packaging Mockup Deep-Dive, Signage Mockup Deep-Dive
 - Industries: Beauty & Cosmetics, Fitness & Wellness
 - Micro: What is a Smartphone Mockup?, What is a Packaging Mockup?, What is a Signage Mockup?, How to Use Mockups in Brand Guidelines?, How to Present Mockups to Clients?
@@ -91,9 +91,9 @@
 
 # DELIVERABLE 10: ALOF.IO ECOSYSTEM INTEGRATION CONTENT
 
-- W1-2: How MockBrand works with BrandForge (logo design → mockup)
-- W3-4: How MockBrand works with PaletteFlow (colors → mockup consistency)
-- W5-6: How MockBrand works with FontFusion (typography → mockup presentation)
-- W7-8: How MockBrand works with BrandCard (digital business card → mockup)
+- W1-2: How MockupForge works with BrandForge (logo design → mockup)
+- W3-4: How MockupForge works with PaletteFlow (colors → mockup consistency)
+- W5-6: How MockupForge works with FontFusion (typography → mockup presentation)
+- W7-8: How MockupForge works with BrandCard (digital business card → mockup)
 - W9-10: Complete Alfo ecosystem workflow (identity → palette → typography → mockup → card)
 - W11-12: Building a cohesive brand presentation across all Alfo tools

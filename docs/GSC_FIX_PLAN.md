@@ -1,9 +1,9 @@
 # Google Search Console (GSC) Coverage Fix Plan
 
-This document outlines the strategy for identifying and resolving indexing issues for the MockBrand logo mockup generator.
+This document outlines the strategy for identifying and resolving indexing issues for the MockupForge logo mockup generator.
 
 ## 1. Audit Existing Coverage Issues
-- **Action:** Export the "Page Indexing" report from GSC for `https://mockbrand.alfo.online`.
+- **Action:** Export the "Page Indexing" report from GSC for `https://mockupforge.alfo.online`.
 - **Target Categories:**
   - `Discovered - currently not indexed`
   - `Crawled - currently not indexed`

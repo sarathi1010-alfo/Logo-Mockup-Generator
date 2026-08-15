@@ -19,7 +19,7 @@ export function generateToolMetadata({
   keyBenefit,
   slug,
 }: ToolMetadataProps): Metadata {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online'
   const url = `${baseUrl}/tools/${cluster.toLowerCase()}/${slug}`
 
   const title = `${toolName} - Free Online ${primaryAction} | ToolSite`

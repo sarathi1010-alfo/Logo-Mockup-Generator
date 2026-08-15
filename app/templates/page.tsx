@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "MockBrand Template Gallery | 50+ Logo Mockup Templates",
+  title: "MockupForge Template Gallery | 50+ Logo Mockup Templates",
   description: "Browse our complete library of high-quality, realistic logo mockup templates. From coffee cups to t-shirts, find the perfect scene for your brand.",
 };
 
@@ -30,12 +30,12 @@ export default function TemplatesPage() {
         <div className="flex items-center gap-3 mb-4">
           <LayoutGrid className="w-8 h-8 text-indigo-600" />
           <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-            MockBrand Template Gallery – 50+ Logo Mockup Templates for Every Industry
+            MockupForge Template Gallery – 50+ Logo Mockup Templates for Every Industry
           </h1>
         </div>
         <div className="text-lg text-slate-600 max-w-4xl space-y-4">
           <p>
-            Welcome to the MockBrand Template Gallery, your ultimate destination for professional, high-resolution branding visuals. Whether you&apos;re presenting a fresh corporate identity or pitching a new apparel line, our library of over 50 realistic logo mockup templates ensures your designs always leave a lasting impression. Our categorized collection covers everything from tactile product mockups and stylish apparel to bold outdoor signage and sleek digital screens.
+            Welcome to the MockupForge Template Gallery, your ultimate destination for professional, high-resolution branding visuals. Whether you&apos;re presenting a fresh corporate identity or pitching a new apparel line, our library of over 50 realistic logo mockup templates ensures your designs always leave a lasting impression. Our categorized collection covers everything from tactile product mockups and stylish apparel to bold outdoor signage and sleek digital screens.
           </p>
           <p>
             Stop relying on flat, uninspiring 2D graphics. By contextualizing your work in authentic, real-world environments, you instantly elevate your brand&apos;s perceived value and help clients visualize the final product. Ready to see your logo in action? Head over to our <Link href="/generate" className="text-indigo-600 hover:underline font-semibold">online mockup generator</Link> to apply your designs instantly. If you&apos;re looking for expert tips on presenting your brand, don&apos;t miss our comprehensive guide on <Link href="/blog/realistic-logo-mockup-guide" className="text-indigo-600 hover:underline font-semibold">how to create realistic logo mockups</Link>. Explore the categories below and transform your creative vision today.

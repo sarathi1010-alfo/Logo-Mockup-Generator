@@ -1,4 +1,4 @@
-# Production Status Log - MockBrand Content & SEO Strategy
+# Production Status Log - MockupForge Content & SEO Strategy
 
 | Sub-task | Status | Notes |
 | :--- | :---: | :--- |
