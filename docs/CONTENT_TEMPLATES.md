@@ -1,4 +1,4 @@
-# DELIVERABLE 1: THE 6 REPEATABLE AEO TEMPLATES (MOCKBRAND EDITION)
+# DELIVERABLE 1: THE 6 REPEATABLE AEO TEMPLATES (MOCKUPFORGE EDITION)
 
 ## Template A – Cluster Article (700-1000 words) – Daily educational depth.
 
@@ -74,7 +74,7 @@
 
 **Best Practices:** Resolution, file format, background choice.
 
-**How to Create:** Using MockBrand's one-click system.
+**How to Create:** Using MockupForge's one-click system.
 
 **AEO Box:** Quick Ref Table (Mockup Type → Best For → Key Elements → Industries).
 

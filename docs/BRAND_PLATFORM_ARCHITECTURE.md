@@ -1,6 +1,6 @@
-# MockBrand: Next-Gen Brand Visualization Platform Architecture
+# MockupForge: Next-Gen Brand Visualization Platform Architecture
 
-This document outlines the architecture and implementation plan for transforming MockBrand from a simple mockup utility into a premium "visual brand presentation platform".
+This document outlines the architecture and implementation plan for transforming MockupForge from a simple mockup utility into a premium "visual brand presentation platform".
 
 ## 1. UI/UX Design System (Cinematic & Trust-Building)
 

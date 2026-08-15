@@ -1,6 +1,6 @@
 # SEO Maintenance & Google Search Console Check Plan
 
-This document outlines the standard operating procedure for monitoring and maintaining the health of the alfo.online property (MockBrand sub-directory/domain) within Google Search Console (GSC) after major content or programmatic SEO updates.
+This document outlines the standard operating procedure for monitoring and maintaining the health of the alfo.online property (MockupForge sub-directory/domain) within Google Search Console (GSC) after major content or programmatic SEO updates.
 
 ## 1. Post-Deployment Verification (Immediate)
 

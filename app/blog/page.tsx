@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog | MockBrand Logo Mockup Generator',
+  title: 'Blog | MockupForge Logo Mockup Generator',
   description: 'Read the latest guides, tutorials, and tips on logo mockups, branding presentations, and design workflows.',
 };
 
@@ -12,7 +12,7 @@ export default function BlogIndexPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
-          MockBrand Blog & Resources
+          MockupForge Blog & Resources
         </h1>
         <p className="text-xl text-slate-600">
           Everything you need to know about logo mockups, client presentations, and building professional brand identities.

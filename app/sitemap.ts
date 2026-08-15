@@ -4,7 +4,7 @@ import { mockups } from '@/lib/mockups'
 import { programmaticPages } from '@/lib/programmatic-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online'
 
   const staticRoutes = [
     '',

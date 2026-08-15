@@ -14,7 +14,7 @@ export const blogPosts: BlogPost[] = [
     title: 'The Complete Guide to Logo Mockups — Everything You Need to Know',
     description: 'Learn what a logo mockup is, why it is essential for client presentations, and how to create photorealistic mockups instantly.',
     date: '2026-07-10',
-    author: 'MockBrand Editorial Team',
+    author: 'MockupForge Editorial Team',
     category: 'Fundamentals',
     content: `
       <h2>The best way to present a logo is by using a <a href="/blog/realistic-logo-mockup-guide">realistic mockup</a> because it helps clients visualize the brand in the real world, increasing approval rates and perceived value.</h2>
@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
       <h3>How to Choose the Right Mockup for Your Logo</h3>
       <p>When selecting a mockup, consider the brand's industry and target audience. A coffee shop logo belongs on a mug or storefront, while a tech startup logo might look best on a laptop or smartphone screen. For a more detailed breakdown, read our guide on <a href="/blog/realistic-logo-mockup-guide">how to create realistic logo mockups for your brand</a>.</p>
 
-      <p>With MockBrand, you can instantly preview your logo across dozens of high-quality mockups without needing Photoshop or complex software.</p>
+      <p>With MockupForge, you can instantly preview your logo across dozens of high-quality mockups without needing Photoshop or complex software.</p>
     `,
   },
   {
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Coffee Cup Logo Mockup — Complete Guide & Best Practices',
     description: 'Discover how to create the perfect coffee cup logo mockup for cafes, roasters, and restaurants.',
     date: '2026-06-27',
-    author: 'MockBrand Editorial Team',
+    author: 'MockupForge Editorial Team',
     category: 'Mockup Types',
     content: `
       <h2>The best coffee cup mockups feature realistic lighting, natural shadows, and proper curvature to make your brand identity look authentic and premium.</h2>
@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Logo Mockup vs Logo Presentation — What\'s the Difference?',
     description: 'Understand the key differences between a logo mockup and a logo presentation, and when to use each for maximum client impact.',
     date: '2026-06-26',
-    author: 'MockBrand Editorial Team',
+    author: 'MockupForge Editorial Team',
     category: 'Fundamentals',
     content: `
       <h2>The key difference is that a logo mockup is a single stylized image showing the logo in a real-world setting, while a logo presentation is a comprehensive document that tells the brand's story, explains the design strategy, and includes multiple mockups.</h2>
@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <h3>How They Work Together</h3>
-      <p>Think of a logo presentation as the gallery and the mockups as the art on the walls. A strong presentation relies on high-quality mockups to make the strategic points tangible. For a complete branding solution, pair <a href="https://alfo.online" target="_blank">BrandForge</a> for your core identity design with MockBrand for the stunning mockups that bring it to life.</p>
+      <p>Think of a logo presentation as the gallery and the mockups as the art on the walls. A strong presentation relies on high-quality mockups to make the strategic points tangible. For a complete branding solution, pair <a href="https://alfo.online" target="_blank">BrandForge</a> for your core identity design with MockupForge for the stunning mockups that bring it to life.</p>
     `,
   },
   {
@@ -91,10 +91,10 @@ export const blogPosts: BlogPost[] = [
     title: 'How to Create a Logo Mockup — Step-by-Step Guide',
     description: 'A beginner-friendly guide on how to create professional, photorealistic logo mockups instantly without complex software.',
     date: '2026-07-11',
-    author: 'MockBrand Editorial Team',
+    author: 'MockupForge Editorial Team',
     category: 'Fundamentals',
     content: `
-      <h2>The easiest way to create a logo mockup is to use an instant online generator like MockBrand, where you simply upload a transparent PNG of your logo, select a template, and instantly download the high-resolution result.</h2>
+      <h2>The easiest way to create a logo mockup is to use an instant online generator like MockupForge, where you simply upload a transparent PNG of your logo, select a template, and instantly download the high-resolution result.</h2>
       <p>Historically, creating a logo mockup required expensive software like Adobe Photoshop, large PSD file downloads, and a deep understanding of smart objects and perspective warping. Today, the process is instantaneous and accessible to everyone.</p>
 
       <h3>Step 1: Prepare Your Logo File</h3>
@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
       <p>Select a mockup that aligns with your brand's industry. A tech company might choose an app screen, while a café should look at <a href="/mockup/coffee-cup">coffee cup mockups</a>.</p>
 
       <h3>Step 3: Upload and Adjust</h3>
-      <p>Upload your file into the generator. With MockBrand, the system automatically handles perspective, lighting, and shadow integration. You can preview the result in real-time.</p>
+      <p>Upload your file into the generator. With MockupForge, the system automatically handles perspective, lighting, and shadow integration. You can preview the result in real-time.</p>
 
       <h3>Step 4: Download and Present</h3>
       <p>Once you are satisfied with the preview, download the high-resolution image. Use these images in your portfolio, social media, or directly in client presentations to secure faster approvals. For more tips, read our comprehensive <a href="/blog/realistic-logo-mockup-guide">how to create realistic logo mockups</a> guide.</p>
@@ -115,7 +115,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Common Logo Mockup Mistakes and How to Avoid Them',
     description: 'Learn the top mistakes designers make when using logo mockups and how to ensure your presentations always look professional.',
     date: '2026-07-10',
-    author: 'MockBrand Editorial Team',
+    author: 'MockupForge Editorial Team',
     category: 'Fundamentals',
     content: `
       <h2>To avoid common logo mockup mistakes, ensure your logo has a transparent background, match the mockup style to the brand's industry, and avoid overusing stylized effects that distract from the actual design.</h2>
@@ -139,13 +139,13 @@ export const blogPosts: BlogPost[] = [
     title: 'How to Create Realistic Logo Mockups for Your Brand in 2026',
     description: 'Learn the exact steps to create realistic logo mockups for your brand to elevate your client presentations and showcase your designs professionally.',
     date: '2026-07-10',
-    author: 'MockBrand Editorial Team',
+    author: 'MockupForge Editorial Team',
     category: 'Guides',
     content: `
       <p>In the competitive world of branding, first impressions are everything. You could spend weeks perfecting a logo design, but if you present it as a flat, 2D vector on a white background, you’re missing a massive opportunity to tell your brand's story. This is where logo mockups come in. They transform abstract concepts into tangible realities, helping clients and stakeholders visualize exactly how a brand will live in the real world.</p>
 
       <h2>How to create realistic logo mockups for your brand?</h2>
-      <p>To create realistic logo mockups: upload your final logo file (SVG/PNG) to MockBrand, browse the industry-specific template library (cups, signs, shirts), select your preferred scene, and instantly download a high-resolution, photorealistic preview to use in branding presentations.</p>
+      <p>To create realistic logo mockups: upload your final logo file (SVG/PNG) to MockupForge, browse the industry-specific template library (cups, signs, shirts), select your preferred scene, and instantly download a high-resolution, photorealistic preview to use in branding presentations.</p>
 
 
       <h2>Why Mockups Are Essential for Branding Presentations</h2>
@@ -159,7 +159,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Lighting and Shadow Integration:</strong> A truly realistic mockup applies the same light source to the logo as the rest of the scene, including highlights and ambient occlusion.</li>
         <li><strong>Texture Blending:</strong> Whether it's the grain of wood or the weave of a canvas bag, the texture should "show through" the logo for an authentic look.</li>
       </ul>
-      <p>Professional mockup generators like <a href="/">MockBrand</a> handle all these complex calculations automatically, ensuring your logo looks perfectly integrated every single time. Check out our <a href="/templates">available templates</a> to get started.</p>
+      <p>Professional mockup generators like <a href="/">MockupForge</a> handle all these complex calculations automatically, ensuring your logo looks perfectly integrated every single time. Check out our <a href="/templates">available templates</a> to get started.</p>
 
       <h2>How to Choose the Right Template for Your Industry</h2>
       <p>Context is king. A beautiful mockup is useless if it doesn't align with the brand's industry. Here is how to choose the right environment for your logo:</p>
@@ -180,8 +180,8 @@ export const blogPosts: BlogPost[] = [
       <p>For law firms, consultancies, and financial institutions, the branding should communicate trust and stability. Use classic stationery sets, thick business cards, embossed leather folders, and elegant glass office partitions. In these industries, "less is more." A single, high-quality business card mockup with a subtle foil-stamping effect can be more impactful than a dozen flashier alternatives.</p>
       <p>Signage is also crucial for corporate brands. Showing the logo as a 3D metallic sign behind a reception desk or as a frosted glass decal on a conference room door provides a sense of permanence and establishment that a digital-only presentation simply cannot match.</p>
 
-      <h2>How to Create Your Mockup in 3 Steps Using MockBrand</h2>
-      <p>Gone are the days when you needed a $50/month Photoshop subscription and 5GB of PSD files to create a single mockup. MockBrand was built to democratize high-end brand presentation. Our "One-Click" system uses proprietary browser-based rendering to apply your designs to professionally photographed templates instantly.</p>
+      <h2>How to Create Your Mockup in 3 Steps Using MockupForge</h2>
+      <p>Gone are the days when you needed a $50/month Photoshop subscription and 5GB of PSD files to create a single mockup. MockupForge was built to democratize high-end brand presentation. Our "One-Click" system uses proprietary browser-based rendering to apply your designs to professionally photographed templates instantly.</p>
       <p>The system automatically detects the optimal placement, applies the correct perspective warping, and integrates natural lighting and shadows. You don't need to be a design expert to get expert results.</p>
 
       <h3>A Step-by-Step Guide to Professional Results</h3>
@@ -199,7 +199,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <h3>Conclusion: Elevate Your Brand Today</h3>
-      <p>In today's visual-first digital landscape, the way you present your work is just as important as the work itself. By using realistic logo mockups, you are providing your clients with a professional, comprehensive look at their future brand. Whether you are a freelance designer building a portfolio or a business owner launching a new product, leveraging tools like MockBrand ensures you always present your designs in the best possible light.</p>
+      <p>In today's visual-first digital landscape, the way you present your work is just as important as the work itself. By using realistic logo mockups, you are providing your clients with a professional, comprehensive look at their future brand. Whether you are a freelance designer building a portfolio or a business owner launching a new product, leveraging tools like MockupForge ensures you always present your designs in the best possible light.</p>
       <p>Ready to see your design in the real world? Start exploring our <a href="/templates">templates</a> now and create your first professional mockup in seconds.</p>
     `,
   },

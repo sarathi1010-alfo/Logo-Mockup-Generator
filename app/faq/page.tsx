@@ -2,18 +2,18 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | MockBrand',
-  description: 'Find answers to common questions about using MockBrand, downloading mockups, and presenting your logo to clients.',
+  title: 'Frequently Asked Questions | MockupForge',
+  description: 'Find answers to common questions about using MockupForge, downloading mockups, and presenting your logo to clients.',
 };
 
 const faqs = [
   {
-    question: "Is MockBrand really free?",
-    answer: "Yes! MockBrand is completely free to use. You can generate and download as many high-resolution logo mockups as you need without any hidden fees."
+    question: "Is MockupForge really free?",
+    answer: "Yes! MockupForge is completely free to use. You can generate and download as many high-resolution logo mockups as you need without any hidden fees."
   },
   {
     question: "Do I need to download any software?",
-    answer: "No, MockBrand runs entirely in your browser. You don't need to install Photoshop or any other design software. Just upload your logo and start generating mockups instantly."
+    answer: "No, MockupForge runs entirely in your browser. You don't need to install Photoshop or any other design software. Just upload your logo and start generating mockups instantly."
   },
   {
     question: "What file formats can I upload?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "Can I use these mockups for commercial projects?",
-    answer: "Absolutely. You can use the mockups generated on MockBrand for client presentations, portfolios, social media, and any commercial purposes."
+    answer: "Absolutely. You can use the mockups generated on MockupForge for client presentations, portfolios, social media, and any commercial purposes."
   },
   {
     question: "What is the resolution of the downloaded mockups?",
@@ -55,7 +55,7 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="text-xl text-slate-600">
-            Everything you need to know about using MockBrand.
+            Everything you need to know about using MockupForge.
           </p>
         </div>
 
