@@ -1,6 +1,7 @@
 import { mockups } from "@/lib/mockups";
 import Link from "next/link";
 import { ArrowRight, Image as ImageIcon } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -38,15 +39,19 @@ export default function Home() {
               className="group flex flex-col bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-indigo-300 hover:shadow-xl transition-all"
             >
               <div className="aspect-square bg-slate-100 relative overflow-hidden">
-                <img
+                <Image
                   src={mockup.layers.background}
                   alt={mockup.title}
+                  width={600}
+                  height={600}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {mockup.layers.overlay && (
-                   <img
+                   <Image
                     src={mockup.layers.overlay}
                     alt=""
+                    width={600}
+                    height={600}
                     className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-50"
                   />
                 )}
