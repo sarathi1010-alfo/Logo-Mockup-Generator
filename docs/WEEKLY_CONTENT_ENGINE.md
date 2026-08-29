@@ -1,5 +1,5 @@
-WEEKLY CONTENT ENGINE: MOCKUPFORGE EDITION
-Target: https://mockupforge.alfo.online/ | GA4 ID: G-HZQ3QT11QC (Immutable)
+WEEKLY CONTENT ENGINE: MOCKBRAND EDITION
+Target: https://mockbrand.alfo.online/ | GA4 ID: G-HZQ3QT11QC (Immutable)
 
 PRE-EXECUTION TECHNICAL MANDATE (IMMUTABLE - RUN EVERY PUBLISH)
 Analytics Lock: Preserve G-HZQ3QT11QC & all GTM scripts in <head> across all Alfo subdomains.
@@ -11,10 +11,10 @@ Zero Hallucination: Do not invent fake metrics, broken links, or non-existent fe
 Post-Publish Automation (Execute after every daily batch):
 
 Append new URLs to /sitemap.xml with current <lastmod>.
-Ping Google: curl https://www.google.com/ping?sitemap=https://mockupforge.alfo.online/sitemap.xml
-Trigger IndexNow: curl -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json" -d '{"host":"mockupforge.alfo.online","key":"[YOUR_INDEXNOW_KEY]","urlList":["URL1","URL2"]}'
+Ping Google: curl https://www.google.com/ping?sitemap=https://mockbrand.alfo.online/sitemap.xml
+Trigger IndexNow: curl -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json" -d '{"host":"mockbrand.alfo.online","key":"[YOUR_INDEXNOW_KEY]","urlList":["URL1","URL2"]}'
 Final Audit (Saturday/Sunday): Run headless check (200 OK) for new URLs. Scan for 4xx orphaned pages. Log Core Web Vitals (LCP/CLS) for the homepage. Report any issues before halting.
-DELIVERABLE 1: THE 6 REPEATABLE AEO TEMPLATES (MOCKUPFORGE EDITION)
+DELIVERABLE 1: THE 6 REPEATABLE AEO TEMPLATES (MOCKBRAND EDITION)
 Template A – Cluster Article (700-1000 words) – Daily educational depth.
 
 H1: [PRIMARY_KEYWORD]: Complete Guide for [TARGET_AUDIENCE] in 2026
@@ -89,7 +89,7 @@ Key Visual Elements: Lighting, shadows, texture, perspective.
 
 Best Practices: Resolution, file format, background choice.
 
-How to Create: Using MockupForge's one-click system.
+How to Create: Using MockBrand's one-click system.
 
 AEO Box: Quick Ref Table (Mockup Type → Best For → Key Elements → Industries).
 
@@ -116,7 +116,7 @@ Internal Links: Pillar + Tool + Mockup Type.
 DELIVERABLE 2: THE REPEATABLE WEEKLY CALENDAR (MON-SUN)
 Monday (Fundamentals & Best Practices): 1 Pillar (Weekly Hub). 5 Micro-Answers (What is...). 3 Clusters.
 
-Tuesday (Comparisons): 2 Comparison Pages (MockupForge vs Competitor X/Y). 5 Micros. 3 Programmatic pages.
+Tuesday (Comparisons): 2 Comparison Pages (MockBrand vs Competitor X/Y). 5 Micros. 3 Programmatic pages.
 
 Wednesday (Mockup Types): 2 Mockup Type Deep-Dives. 5 Micros. 3 Programmatic pages.
 
@@ -154,7 +154,7 @@ Week 1 (Fundamentals):
 
 Pillar: "The Ultimate Guide to Logo Mockups in 2026"
 
-Comparisons: MockupForge vs Placeit, MockupForge vs Smartmockups
+Comparisons: MockBrand vs Placeit, MockBrand vs Smartmockups
 
 Mockup Types: Coffee Cup Mockup Deep-Dive, T-Shirt Mockup Deep-Dive
 
@@ -166,7 +166,7 @@ Week 2 (Mockup Types & Applications):
 
 Pillar: "The Complete Guide to Logo Mockup Types"
 
-Comparisons: MockupForge vs Mediamodifier, MockupForge vs Hatchful
+Comparisons: MockBrand vs Mediamodifier, MockBrand vs Hatchful
 
 Mockup Types: Storefront Mockup Deep-Dive, Business Card Mockup Deep-Dive
 
@@ -178,7 +178,7 @@ Week 3 (Technical & Design):
 
 Pillar: "The Ultimate Guide to Logo Preparation for Mockups"
 
-Comparisons: MockupForge vs Canva, MockupForge vs Adobe Express
+Comparisons: MockBrand vs Canva, MockBrand vs Adobe Express
 
 Mockup Types: Laptop Mockup Deep-Dive, Smartphone Mockup Deep-Dive
 
@@ -190,7 +190,7 @@ Week 4 (Presentation & Strategy):
 
 Pillar: "The Complete Guide to Client Presentations with Mockups"
 
-Comparisons: MockupForge vs Mockup World, MockupForge vs Pixeden
+Comparisons: MockBrand vs Mockup World, MockBrand vs Pixeden
 
 Mockup Types: Packaging Mockup Deep-Dive, Signage Mockup Deep-Dive
 
@@ -292,13 +292,13 @@ Best for brand presentations
 Best template library
 
 DELIVERABLE 10: ALOF.IO ECOSYSTEM INTEGRATION CONTENT
-W1-2: How MockupForge works with BrandForge (logo design → mockup)
+W1-2: How MockBrand works with BrandForge (logo design → mockup)
 
-W3-4: How MockupForge works with PaletteFlow (colors → mockup consistency)
+W3-4: How MockBrand works with PaletteFlow (colors → mockup consistency)
 
-W5-6: How MockupForge works with FontFusion (typography → mockup presentation)
+W5-6: How MockBrand works with FontFusion (typography → mockup presentation)
 
-W7-8: How MockupForge works with BrandCard (digital business card → mockup)
+W7-8: How MockBrand works with BrandCard (digital business card → mockup)
 
 W9-10: Complete Alfo ecosystem workflow (identity → palette → typography → mockup → card)
 
@@ -313,4 +313,4 @@ GA4 (G-HZQ3QT11QC) preserved globally.
 
 Sitemap/IndexNow Automation scripted.
 
-All 10 Deliverables generated with specific examples from MockupForge niche.
+All 10 Deliverables generated with specific examples from MockBrand niche.
