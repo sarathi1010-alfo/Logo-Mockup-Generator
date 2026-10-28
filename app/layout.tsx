@@ -4,9 +4,33 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online'),
-  title: "MockupForge | Free Logo Mockup Generator",
-  description: "Turn any logo into premium real-world mockups in seconds.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online'),
+  title: "Free Logo Mockup Generator | 3D Brand Mockups - MockupForge",
+  description: "Generate photorealistic 3D logo mockups on t-shirts, signs, cards, and packaging in seconds. 100% free logo mockup generator with high-res export.",
+  alternates: {
+    canonical: "https://mockbrand.alfo.online/",
+  },
+  openGraph: {
+    title: "Free Logo Mockup Generator | 3D Brand Mockups - MockupForge",
+    description: "Generate photorealistic 3D logo mockups on t-shirts, signs, cards, and packaging in seconds. 100% free logo mockup generator with high-res export.",
+    url: "https://mockbrand.alfo.online/",
+    siteName: "MockupForge",
+    type: "website",
+    images: [
+      {
+        url: "https://mockbrand.alfo.online/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MockupForge Logo Mockup Generator",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Logo Mockup Generator | 3D Brand Mockups - MockupForge",
+    description: "Generate photorealistic 3D logo mockups on t-shirts, signs, cards, and packaging in seconds. 100% free logo mockup generator with high-res export.",
+    images: ["https://mockbrand.alfo.online/og-image.png"],
+  },
   other: {
     "google-adsense-account": "ca-pub-6393936268623951",
   },
@@ -40,8 +64,11 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased min-h-screen flex flex-col">
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <Navbar />
-        <main className="flex-1">
+        <main id="main-content" className="flex-1">
           {children}
         </main>
       </body>
