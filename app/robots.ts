@@ -1,14 +1,16 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online'
 
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: ['/admin', '/api'],
-    },
+    rules: [
+      {
+        userAgent: ['Googlebot', 'AhrefsBot', '*'],
+        allow: '/',
+        disallow: ['/admin', '/api'],
+      },
+    ],
     sitemap: `${baseUrl}/sitemap.xml`,
   }
 }

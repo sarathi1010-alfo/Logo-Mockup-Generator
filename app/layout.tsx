@@ -4,7 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://mockupforge.alfo.online'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://mockbrand.alfo.online'),
   title: "MockupForge | Free Logo Mockup Generator",
   description: "Turn any logo into premium real-world mockups in seconds.",
   other: {
@@ -34,6 +34,7 @@ export default function RootLayout({
               gtag('js', new Date());
               gtag('config', 'G-HZQ3QT11QC', {
                 page_path: window.location.pathname,
+                cookie_domain: 'auto'
               });
             `,
           }}
