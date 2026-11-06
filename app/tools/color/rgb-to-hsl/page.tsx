@@ -106,9 +106,9 @@ export default function RgbToHslPage() {
         <div className="mt-8 border-t border-gray-200 pt-8">
           <h3 className="text-lg font-medium text-gray-900">Explore More Color Tools</h3>
           <ul className="mt-4 space-y-2 list-disc list-inside text-indigo-600">
-            <li><a href="/tools/color" className="hover:underline">View all Color Tools</a></li>
-            <li><a href="/tools/color/hex-to-rgb" className="hover:underline">HEX to RGB Converter</a></li>
-            <li><a href="/tools/color/hsl-to-hex" className="hover:underline">HSL to HEX Converter</a></li>
+            <li><a href="https://paletteflow.alfo.online/tools" target="_blank" rel="noopener" className="hover:underline">View all Color Tools</a></li>
+            <li><a href="https://paletteflow.alfo.online/tools/gradient-generator" target="_blank" rel="noopener" className="hover:underline">Gradient Generator</a></li>
+            <li><a href="https://paletteflow.alfo.online/tools/contrast-checker" target="_blank" rel="noopener" className="hover:underline">Contrast Checker</a></li>
           </ul>
         </div>
 

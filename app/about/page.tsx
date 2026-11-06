@@ -25,7 +25,7 @@ export default function AboutPage() {
 
       <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">The alfo.online Ecosystem</h2>
       <p>
-        MockupForge is proudly part of the <a href="https://alfo.online" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800">alfo.online</a> ecosystem of utility micro-tools.
+        MockupForge is proudly part of the <a href="https://alfo.online" target="_blank" rel="noopener" className="text-indigo-600 hover:text-indigo-800">alfo.online</a> ecosystem of utility micro-tools.
         Our tools are designed to work seamlessly together to empower your creative workflow:
       </p>
       <ul>

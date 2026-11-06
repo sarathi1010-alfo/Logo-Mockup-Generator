@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import * as fabric from "fabric";
 import { MockupConfig } from "@/lib/mockups";
 import { Download, Upload, Maximize } from "lucide-react";
+import { trackEvent } from "@/lib/gtag";
 
 interface MockupEditorProps {
   config: MockupConfig;
@@ -238,6 +239,7 @@ export default function MockupEditor({ config }: MockupEditorProps) {
 
       canvas.setActiveObject(img);
       canvas.requestRenderAll();
+      trackEvent('render_mockup', { mockup: config.slug, title: config.title, action: 'upload_logo' });
     };
     reader.readAsDataURL(file);
   };
@@ -264,10 +266,13 @@ export default function MockupEditor({ config }: MockupEditorProps) {
     }
 
     canvas.requestRenderAll();
+    trackEvent('render_mockup', { mockup: config.slug, title: config.title, action: 'auto_fit' });
   };
 
   const handleExport = () => {
     if (!canvas) return;
+
+    trackEvent('download_mockup', { mockup: config.slug, title: config.title, format: 'png' });
 
     // Deselect before export
     canvas.discardActiveObject();

@@ -1,7 +1,16 @@
 import { mockups } from "@/lib/mockups";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { ArrowRight, Image as ImageIcon, CheckCircle, HelpCircle, Sparkles } from "lucide-react";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Free Logo Mockup Generator | 3D Brand Mockups - MockupForge",
+  description: "Generate photorealistic 3D logo mockups on t-shirts, signs, cards, and packaging in seconds. 100% free logo mockup generator with high-res export.",
+  alternates: {
+    canonical: "https://mockbrand.alfo.online/",
+  },
+};
 
 const jsonLd = [
   {
